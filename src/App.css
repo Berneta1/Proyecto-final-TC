@@ -1,0 +1,8 @@
+.navbar>.container-fluid {
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.navbar-brand {
+    text-align: center;
+}

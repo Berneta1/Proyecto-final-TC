@@ -1,0 +1,78 @@
+[
+    {
+        "id":"L1",
+        "name":"Caramel Spritz",
+        "product":"Lámpara",
+        "style":"Hogar",
+        "model":"Mesa",
+        "material":"Fierro y vidrio",
+        "figura":"Geométrica",
+        "detail":"Base de fierro y Vitreaux",
+        "size":"Alto: 37cm Diametro: 26cm",
+        "color":"Naranjo, cafe y amarillo transparente",
+        "price":180.000,
+        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149986&parId=e0655fd9f5e90cc6%21149448&o=OneUp",
+        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149989&parId=e0655fd9f5e90cc6%21149448&o=OneUp"
+    },
+    {
+        "id":"L2",
+        "name":"Otoño Invernal",
+        "product":"Lámpara",
+        "style":"Hogar",
+        "model":"Mesa",
+        "material":"Fierro y vidrio",
+        "figura":"Hojas",
+        "detail":"Lampara tres caras en Base de fierro y hojas de parra en Vitreaux",
+        "size":"",
+        "color":"Verde, rojo y amarillo",
+        "price":110.000,
+        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149980&parId=e0655fd9f5e90cc6%21149448&o=OneUp",
+        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149982&parId=e0655fd9f5e90cc6%21149448&o=OneUp"
+    },
+    {
+        "id":"L3",
+        "name":"Crossandra",
+        "product":"Lámpara",
+        "style":"Hogar",
+        "model":"Colgante",
+        "material":"Fierro y vidrio",
+        "figura":"Flores",
+        "detail":"Lampara de cuatro caras en base de fierro y pantalla de flores Crossandra en Vitreaux",
+        "size":"Alto:35cm, ancho:23cm",
+        "color":"Verde y Naranjo",
+        "price":100.000,
+        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149602&parId=e0655fd9f5e90cc6%21149437&o=OneUp",
+        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149603&parId=e0655fd9f5e90cc6%21149437&o=OneUp"
+    },
+    {
+        "id":"L4",
+        "name":"Enredadera de Pandora",
+        "product":"Lámpara",
+        "style":"Hogar",
+        "model":"Colgante",
+        "material":"Fierro y vidrio",
+        "figura":"Enredadera",
+        "detail":"Lampara de cuatro caras en base de fierro y pantalla de Enredadera con flores Pandora en Vitreaux",
+        "size":"Alto:35cm, ancho:23cm",
+        "color":"Verde y Rosado",
+        "price":100.000,
+        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149648&parId=e0655fd9f5e90cc6%21149437&o=OneUp",
+        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149649&parId=e0655fd9f5e90cc6%21149437&o=OneUp"
+    },
+    {
+        "id":"L5",
+        "name":"Flores al Cubo",
+        "product":"Lámpara",
+        "style":"Hogar",
+        "model":"Pie",
+        "material":"Fierro y vidrio",
+        "figura":"Enredadera",
+        "detail":"Lampara de cuatro caras en base de fierro y pantalla de diversas flores en Vitreaux",
+        "size":"",
+        "color":"Violeta, celeste y verde ",
+        "price":130.000,
+        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150008&parId=e0655fd9f5e90cc6%21149449&o=OneUp",
+        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150009&parId=e0655fd9f5e90cc6%21149449&o=OneUp"
+    }
+
+]

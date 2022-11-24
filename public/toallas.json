@@ -1,0 +1,74 @@
+[
+    {
+        "id":"T1",
+        "name":"Margaritas en Rosado",
+        "product":"Toalla Bordada",
+        "estyle":"Hogar",
+        "model":"mujer",
+        "figura":"Flores",
+        "size":"50cm x 70cm",
+        "detail":"Toalla con margaritas y fondo rosado",
+        "color":"Blanco con rosado",
+        "price":11.000,
+        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150915&parId=e0655fd9f5e90cc6%21149732&o=OneUp",
+        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150917&parId=e0655fd9f5e90cc6%21149732&o=OneUp"
+    },
+    {
+        "id":"T2",
+        "name":"Papas Fritas",
+        "product":"Toalla Bordada",
+        "estyle":"Cocicna",
+        "model":"Cocina",
+        "figura":"Papas Fritas",
+        "size":"50cm x 80cm",
+        "detail":"Toalla Bordada con tematica de papas fritas",
+        "color":"Rojo, blanco y naranjo",
+        "price":13.000,
+        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150780&parId=e0655fd9f5e90cc6%21149730&o=OneUp",
+        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150779&parId=e0655fd9f5e90cc6%21149730&o=OneUp"
+    },
+    {
+        "id":"T3",
+        "name":"Bárbara Corazónes",
+        "product":"Toalla Bordada",
+        "estyle":"Personalizado",
+        "model":"Mujer",
+        "figura":"Nombre",
+        "size":"50cm x 80cm",
+        "detail":"Toalla con bordado de corazones a nombre de Barbara",
+        "color":"Azukino y blanco",
+        "price":15.000,
+        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150943&parId=e0655fd9f5e90cc6%21149732&o=OneUp",
+        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150936&parId=e0655fd9f5e90cc6%21149732&o=OneUp"
+    },
+    {
+        "id":"T4",
+        "name":"Bebe Caracol",
+        "product":"Toalla Bordada",
+        "estyle":"Bebe",
+        "model":"Bebe",
+        "figura":"Caracol",
+        "size":"45cm x 65cm",
+        "detail":"Toalla bordada para bebe",
+        "color":"Verde agua",
+        "price":15.000,
+        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150726&parId=e0655fd9f5e90cc6%21149729&o=OneUp",
+        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150727&parId=e0655fd9f5e90cc6%21149729&o=OneUp"
+    },
+    {
+        "id":"T5",
+        "name":"Libelula",
+        "product":"Toalla Bordada",
+        "estyle":"Bebe y hogar",
+        "model":"Insectos",
+        "figura":"Libelula",
+        "size":"70cm x 49cm",
+        "detail":"Toalla bordada para bebe con detalles de Libelula",
+        "color":"Azul oscuro y blanco",
+        "price":15.000,
+        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150722&parId=e0655fd9f5e90cc6%21149729&o=OneUp",
+        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150721&parId=e0655fd9f5e90cc6%21149729&o=OneUp"
+    }
+
+    
+]
