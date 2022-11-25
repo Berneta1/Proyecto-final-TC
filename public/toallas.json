@@ -9,9 +9,9 @@
         "size":"50cm x 70cm",
         "detail":"Toalla con margaritas y fondo rosado",
         "color":"Blanco con rosado",
-        "price":11.000,
-        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150915&parId=e0655fd9f5e90cc6%21149732&o=OneUp",
-        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150917&parId=e0655fd9f5e90cc6%21149732&o=OneUp"
+        "price":"11.000 c/u",
+        "img-detail":"",
+        "img":""
     },
     {
         "id":"T2",
@@ -24,8 +24,8 @@
         "detail":"Toalla Bordada con tematica de papas fritas",
         "color":"Rojo, blanco y naranjo",
         "price":13.000,
-        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150780&parId=e0655fd9f5e90cc6%21149730&o=OneUp",
-        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150779&parId=e0655fd9f5e90cc6%21149730&o=OneUp"
+        "img-detail":"",
+        "img":""
     },
     {
         "id":"T3",
@@ -38,8 +38,8 @@
         "detail":"Toalla con bordado de corazones a nombre de Barbara",
         "color":"Azukino y blanco",
         "price":15.000,
-        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150943&parId=e0655fd9f5e90cc6%21149732&o=OneUp",
-        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150936&parId=e0655fd9f5e90cc6%21149732&o=OneUp"
+        "img-detail":"",
+        "img":""
     },
     {
         "id":"T4",
@@ -52,8 +52,8 @@
         "detail":"Toalla bordada para bebe",
         "color":"Verde agua",
         "price":15.000,
-        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150726&parId=e0655fd9f5e90cc6%21149729&o=OneUp",
-        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150727&parId=e0655fd9f5e90cc6%21149729&o=OneUp"
+        "img-detail":"",
+        "img":""
     },
     {
         "id":"T5",
@@ -66,8 +66,8 @@
         "detail":"Toalla bordada para bebe con detalles de Libelula",
         "color":"Azul oscuro y blanco",
         "price":15.000,
-        "img-detail":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150722&parId=e0655fd9f5e90cc6%21149729&o=OneUp",
-        "img":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150721&parId=e0655fd9f5e90cc6%21149729&o=OneUp"
+        "img-detail":"",
+        "img":""
     }
 
     

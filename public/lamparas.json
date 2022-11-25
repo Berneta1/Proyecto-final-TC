@@ -11,8 +11,8 @@
         "size":"Alto: 37cm Diametro: 26cm",
         "color":"Naranjo, cafe y amarillo transparente",
         "price":180.000,
-        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149986&parId=e0655fd9f5e90cc6%21149448&o=OneUp",
-        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149989&parId=e0655fd9f5e90cc6%21149448&o=OneUp"
+        "img-off":"",
+        "img-on":""
     },
     {
         "id":"L2",
@@ -26,8 +26,8 @@
         "size":"",
         "color":"Verde, rojo y amarillo",
         "price":110.000,
-        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149980&parId=e0655fd9f5e90cc6%21149448&o=OneUp",
-        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149982&parId=e0655fd9f5e90cc6%21149448&o=OneUp"
+        "img-off":"",
+        "img-on":""
     },
     {
         "id":"L3",
@@ -41,8 +41,8 @@
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Naranjo",
         "price":100.000,
-        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149602&parId=e0655fd9f5e90cc6%21149437&o=OneUp",
-        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149603&parId=e0655fd9f5e90cc6%21149437&o=OneUp"
+        "img-off":"",
+        "img-on":""
     },
     {
         "id":"L4",
@@ -56,8 +56,8 @@
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Rosado",
         "price":100.000,
-        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149648&parId=e0655fd9f5e90cc6%21149437&o=OneUp",
-        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149649&parId=e0655fd9f5e90cc6%21149437&o=OneUp"
+        "img-off":"",
+        "img-on":""
     },
     {
         "id":"L5",
@@ -71,8 +71,8 @@
         "size":"",
         "color":"Violeta, celeste y verde ",
         "price":130.000,
-        "img-off":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150008&parId=e0655fd9f5e90cc6%21149449&o=OneUp",
-        "img-on":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21150009&parId=e0655fd9f5e90cc6%21149449&o=OneUp"
+        "img-off":"",
+        "img-on":""
     }
 
 ]

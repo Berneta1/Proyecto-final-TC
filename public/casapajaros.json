@@ -10,8 +10,8 @@
         "size":" Ancho:40cm largo:30cm alto:30cm",
         "color":" Azul y rojo",
         "price":30.000,
-        "img1":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149238&parId=e0655fd9f5e90cc6%21149160&o=OneUp",
-        "img2":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149239&parId=e0655fd9f5e90cc6%21149160&o=OneUp"
+        "img1":"",
+        "img2":""
     },
     {
         "id":"C2",
@@ -24,8 +24,8 @@
         "size":" Ancho:50cm largo:27cm alto:50cm",
         "color":" Azul y rojo",
         "price":32.000,
-        "img1":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149247&parId=e0655fd9f5e90cc6%21149160&o=OneUp",
-        "img2":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149246&parId=e0655fd9f5e90cc6%21149160&o=OneUp"
+        "img1":"",
+        "img2":""
     },
     {
         "id":"C3",
@@ -38,21 +38,35 @@
         "size":" Ancho:50cm lago:27cm alto:50cm",
         "color":" Blanco, rosado y rojo",
         "price":32.000,
-        "img1":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149276&parId=e0655fd9f5e90cc6%21149160&o=OneUp",
-        "img2":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149275&parId=e0655fd9f5e90cc6%21149160&o=OneUp"
+        "img1":"",
+        "img2":""
     },
     {
-        "id":"C3",
-        "name":"Gelato bird",
+        "id":"C4",
+        "name":"la jardinera",
         "product":"Casa pájaros",
         "style":"Exteriores",
         "model":"Aves",
         "material":"Madera",
-        "detail":"Casa para aves de madera con tematica de heladeria, acompañado de toldos y llamativos colores. resistente al agua",
-        "size":" Ancho:50cm lago:27cm alto:50cm",
-        "color":" Blanco, rosado y rojo",
+        "detail":"Casa para aves de madera con jardinera y llamativos colores tostados. resistente al agua",
+        "size":" Ancho:31cm lago:24cm alto:45cm",
+        "color":" Cafe tostado y turqueza",
         "price":45.000,
-        "img1":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149276&parId=e0655fd9f5e90cc6%21149160&o=OneUp",
-        "img2":"https://onedrive.live.com/?cid=E0655FD9F5E90CC6&id=e0655fd9f5e90cc6%21149275&parId=e0655fd9f5e90cc6%21149160&o=OneUp"
+        "img1":"",
+        "img2":""
+    },
+    {
+        "id":"C5",
+        "name":"Mexico",
+        "product":"Casa pájaros",
+        "style":"Exteriores",
+        "model":"Aves",
+        "material":"Madera",
+        "detail":"Doble casa para aves de madera con llamativos colores tostados inspirado en Mexico. resistente al agua",
+        "size":" Ancho:28cm lago:24cm alto:34cm",
+        "color":" Cafe tostado y rosado",
+        "price":35.000,
+        "img1":"",
+        "img2":""
     }
 ]
