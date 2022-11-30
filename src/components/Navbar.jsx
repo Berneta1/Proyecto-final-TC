@@ -10,12 +10,13 @@ function OffcanvasExample() {
   return (
     <>
       {[false].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3">
+        <Navbar key={expand} bg="light" expand={expand} className="navbar">
           <Container fluid>
             <Nav.Link to="/carrito"><i className="fa-solid fa-bag-shopping"></i></Nav.Link>
-            <Navbar.Brand to="/">Telarana de Cristal</Navbar.Brand>
-
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Nav.Link to="/">
+              <img className='Header.img' src='public\images\otras\logo.png'></img>
+              </Nav.Link>
+               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
