@@ -5,17 +5,17 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-
+import { Link } from "react-router-dom"
 function OffcanvasExample() {
   return (
     <>
       {[false].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="navbar">
           <Container fluid>
-            <Nav.Link to="/carrito"><i className="fa-solid fa-bag-shopping"></i></Nav.Link>
-            <Nav.Link to="/">
+            <Link to="/carrito"><i className="fa-solid fa-bag-shopping"></i></Link>
+            <Link to="/">
               <img className='Header.img' src='public\images\otras\logo.png'></img>
-              </Nav.Link>
+              </Link>
                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,8 +28,8 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link to="/bordados">Bordados</Nav.Link>
-                  <Nav.Link to="/casapajaros">Casas Nido</Nav.Link>
+                  <Link to="/bordados">Bordados</Link>
+                  <Link to="/casapajaros">Casas Nido</Link>
                   <Nav.Link to="/lamparas">Lamparas</Nav.Link>
                   <NavDropdown
                     title="Dropdown"

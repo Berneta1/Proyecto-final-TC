@@ -22,7 +22,7 @@ const Home = () => {
                                         <img src={casa.img1} alt={casa.name}></img>
                                     </div>
                                 <div className="card-detail">
-                                    <h4>{casa.name}</h4>
+                                    <h4>${casa.name}</h4>
                                     <p>${casa.price}</p>
                                 </div>
                             </div>
