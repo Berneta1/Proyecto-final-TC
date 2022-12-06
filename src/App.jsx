@@ -15,14 +15,16 @@ import NotFound from './views/Notfound.jsx'
 import QuienesSomos from './views/QuienesSomos.jsx'
 import Contactanos from './views/Contactanos.jsx'
 import Detail from './views/detail.jsx';
+import Footer from './components/Footer.jsx';
+import Login from './views/Login';
 
 
 function App() {
-
+//creamos los estados, solicitamos la data a la api, clasificamos por tipo de producto y la pasamos a un estado global.
     const [casas, setCasas ] = useState([])
     const [lamparas, setLamparas] = useState([])
     const [bordados, setBordados] = useState([])
-
+    const [todos, setTodos]= useState([])
     const dataProductos = "/productos.json";
   
     useEffect(() => {
@@ -32,16 +34,13 @@ function App() {
             setCasas(json.casasnido)
             setLamparas(json.lamparas)
             setBordados(json.bordados)
-            
-            
+            setTodos(json)
           })
           .catch((e) => console.log(e))
       }, []);
 
-      const globalState = { casas, lamparas, bordados }
+      const globalState = { todos, casas, lamparas, bordados }
       
-    
-
     return (
         <div className="App">
         <Context.Provider value={globalState}>
@@ -56,8 +55,10 @@ function App() {
                         <Route path='/quienessomos' element={<QuienesSomos />}></Route>
                         <Route path='/contactanos' element={<Contactanos />}></Route>
                         <Route path='*' element={<NotFound />}></Route>
-                        <Route path='/detalle/:id' element={ <Detail />}></Route>
+                        <Route path='/:category/:name' element={ <Detail />}></Route>
+                        <Route path='/login' element={ <Login />}></Route>
                     </Routes>
+                    <Footer></Footer>
                 </BrowserRouter>
             </Context.Provider>
             

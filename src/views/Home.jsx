@@ -5,12 +5,18 @@ import Context from "../context/context"
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate()
     const { casas, lamparas, bordados } = useContext(Context)
+
+    const createRoute = (route)=> {
+        const lowerCase = route.toLowerCase()
+        return lowerCase.replaceAll(" ","-")
+    }
 
     return (
         <main>
             <div className="home-img">
-                <h1>Arte con amor </h1>
+                <h1>Arte hecho con amor </h1>
             </div>
             <div className="galeria grid-columns-4 p-3">
                 {
@@ -19,7 +25,7 @@ const Home = () => {
                             <div key={casa.id}
                                  className="card">
                                     <div className="card-img">
-                                        <img src={casa.img1} alt={casa.name}></img>
+                                        <img src={casa.img1} alt={casa.name} onClick={() => navigate(`/${casa.type}/${createRoute(casa.id)}`)}></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>${casa.name}</h4>
@@ -37,7 +43,7 @@ const Home = () => {
                             <div key={lampara.id}
                                  className="card">
                                     <div className="card-img">
-                                        <img src={lampara.imgon} alt={lampara.name}></img>
+                                        <img src={lampara.img2} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)} ></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>{lampara.name}</h4>
@@ -55,7 +61,7 @@ const Home = () => {
                             <div key={bordado.id}
                                  className="card">
                                     <div className="card-img">
-                                        <img src={bordado.img} alt={bordado.name}></img>
+                                        <img src={bordado.img2} alt={bordado.name} onClick={() => navigate(`/${bordado.type}/${createRoute(bordado.id)}`)}></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>{bordado.name}</h4>

@@ -1,6 +1,8 @@
-{"lamparas": [
+{
+    "lamparas": [
     {
-        "id":"L1",
+        "id":"l1",
+        "type":"lamparas",
         "name":"Caramel Spritz",
         "product":"Lámpara",
         "style":"Hogar",
@@ -11,11 +13,12 @@
         "size":"Alto: 37cm Diametro: 26cm",
         "color":"Naranjo, cafe y amarillo transparente",
         "price":180.000,
-        "imgoff":"public/images/lamparas/L1/LAM-Mes-Fie-Vitro.JPG",
-        "imgon":"public/images/lamparas/L1/LAM-Mes-Fie-Vitro-Luz.JPG"
+        "img1":"/images/lamparas/L1/LAM-Mes-Fie-Vitro.JPG",
+        "img2":"/images/lamparas/L1/LAM-Mes-Fie-Vitro-Luz.JPG"
     },
     {
-        "id":"L2",
+        "id":"l2",
+        "type":"lamparas",
         "name":"Otoño Invernal",
         "product":"Lámpara",
         "style":"Hogar",
@@ -26,11 +29,12 @@
         "size":"",
         "color":"Verde, rojo y amarillo",
         "price":110.000,
-        "imgoff":"public/images/lamparas/L2/LAM-Mes-Hoj-Tri.JPG",
-        "imgon":"public/images/lamparas/L2/LAM-Mes-Hoj-Tri-Luz.JPG"
+        "img1":"/images/lamparas/L2/LAM-Mes-Hoj-Tri.JPG",
+        "img2":"/images/lamparas/L2/LAM-Mes-Hoj-Tri-Luz.JPG"
     },
     {
-        "id":"L3",
+        "id":"l3",
+        "type":"lamparas",
         "name":"Crossandra",
         "product":"Lámpara",
         "style":"Hogar",
@@ -41,11 +45,12 @@
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Naranjo",
         "price":100.000,
-        "imgoff":"public/images/lamparas/L3/LAM-Col-Flo-Cub.JPG",
-        "imgon":"public/images/lamparas/L3/LAM-Col-Flo-Cub-Luz.JPG"
+        "img1":"/images/lamparas/L3/LAM-Col-Flo-Cub.JPG",
+        "img2":"/images/lamparas/L3/LAM-Col-Flo-Cub-Luz.JPG"
     },
     {
-        "id":"L4",
+        "id":"l4",
+        "type":"lamparas",
         "name":"Enredadera de Pandora",
         "product":"Lámpara",
         "style":"Hogar",
@@ -56,11 +61,12 @@
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Rosado",
         "price":100.000,
-        "imgoff":"public/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub.JPG",
-        "imgon":"public/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub-Luz.JPG"
+        "img1":"/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub.JPG",
+        "img2":"/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub-Luz.JPG"
     },
     {
-        "id":"L5",
+        "id":"l5",
+        "type":"lamparas",
         "name":"Flores al Cubo",
         "product":"Lámpara",
         "style":"Hogar",
@@ -71,14 +77,15 @@
         "size":"",
         "color":"Violeta, celeste y verde ",
         "price":130.000,
-        "imgoff":"public/images/lamparas/L5/LAM-Pie-Fie-4caras.JPG",
-        "imgon":"public/images/lamparas/L5/LAM-Pie-Fie-4caras-Luz.JPG"
+        "img1":"/images/lamparas/L5/LAM-Pie-Fie-4caras.JPG",
+        "img2":"/images/lamparas/L5/LAM-Pie-Fie-4caras-Luz.JPG"
     }
 
 ],
 "bordados": [
     {
-    "id":"T1",
+    "id":"t1",
+    "type":"bordados",
     "name":"Margaritas en Rosado",
     "product":"Toalla Bordada",
     "estyle":"Hogar",
@@ -88,11 +95,12 @@
     "detail":"Toalla con margaritas y fondo rosado",
     "color":"Blanco con rosado",
     "price":"11.000 c/u",
-    "imgzoom":"public/images/bordados/T1/TOA-Muj-Fondo margaritas.JPG",
-    "img":"public/images/bordados/T1/TOA-Muj-Fondo margaritas-2.JPG"
+    "img1":"/images/bordados/T1/TOA-Muj-Fondo margaritas.JPG",
+    "img2":"/images/bordados/T1/TOA-Muj-Fondo margaritas-2.JPG"
 },
 {
-    "id":"T2",
+    "id":"t2",
+    "type":"bordados",
     "name":"Papas Fritas",
     "product":"Toalla Bordada",
     "estyle":"Cocicna",
@@ -102,11 +110,12 @@
     "detail":"Toalla Bordada con tematica de papas fritas",
     "color":"Rojo, blanco y naranjo",
     "price":13.000,
-    "imgzoom":"public/images/bordados/T2/TOA-Coc-Papas fritas-2.JPG",
-    "img":"public/images/bordados/T2/TOA-Coc-Papas fritas.JPG"
+    "img1":"/images/bordados/T2/TOA-Coc-Papas fritas-2.JPG",
+    "img2":"/images/bordados/T2/TOA-Coc-Papas fritas.JPG"
 },
 {
-    "id":"T3",
+    "id":"t3",
+    "type":"bordados",
     "name":"Bárbara Corazónes",
     "product":"Toalla Bordada",
     "estyle":"Personalizado",
@@ -116,11 +125,12 @@
     "detail":"Toalla con bordado de corazones a nombre de Barbara",
     "color":"Azukino y blanco",
     "price":15.000,
-    "imgzoom":"public/images/bordados/T3/TOA-Muj-Bárbara-Corazónes2.JPG",
-    "img":"public/images/bordados/T3/TOA-Muj-Bárbara-Corazónes.JPG"
+    "img1":"/images/bordados/T3/TOA-Muj-Bárbara-Corazónes2.JPG",
+    "img2":"/images/bordados/T3/TOA-Muj-Bárbara-Corazónes.JPG"
 },
 {
-    "id":"T4",
+    "id":"t4",
+    "type":"bordados",
     "name":"Bebe Caracol",
     "product":"Toalla Bordada",
     "estyle":"Bebe",
@@ -130,11 +140,12 @@
     "detail":"Toalla bordada para bebe",
     "color":"Verde agua",
     "price":15.000,
-    "imgzoom":"public/images/bordados/T4/TOA-Beb-Caracól2.JPG",
-    "img":"public/images/bordados/T4/TOA-Beb-Caracól.JPG"
+    "img1":"/images/bordados/T4/TOA-Beb-Caracól2.JPG",
+    "img2":"/images/bordados/T4/TOA-Beb-Caracól.JPG"
 },
 {
-    "id":"T5",
+    "id":"t5",
+    "type":"bordados",
     "name":"Libelula",
     "product":"Toalla Bordada",
     "estyle":"Bebe y hogar",
@@ -144,13 +155,14 @@
     "detail":"Toalla bordada para bebe con detalles de Libelula",
     "color":"Azul oscuro y blanco",
     "price":15.000,
-    "imgzoom":"public/images/bordados/T5/TOA-Beb-Libélulas-2.JPG",
-    "img":"public/images/bordados/T5/TOA-Beb-Libélulas.JPG"
+    "img1":"/images/bordados/T5/TOA-Beb-Libélulas-2.JPG",
+    "img2":"/images/bordados/T5/TOA-Beb-Libélulas.JPG"
 }],
 "casasnido": [
     {
-        "id":"C1",
-        "name":"Cas",
+        "id":"c1",
+        "type":"casas",
+        "name":"Clasic",
         "product":"Casa pájaros",
         "style":"Exteriores",
         "model":"Aves",
@@ -159,11 +171,12 @@
         "size":" Ancho:40cm largo:30cm alto:30cm",
         "color":" Azul y rojo",
         "price":30.000,
-        "img1":"public/images/casasnido/C1/CAS-Mad-Teja-Arbol.JPG",
-        "img2":"public/images/casasnido/C1/CAS-Mad-Teja-Arbol2.JPG"
+        "img1":"/images/casasnido/C1/CAS-Mad-Teja-Arbol.JPG",
+        "img2":"/images/casasnido/C1/CAS-Mad-Teja-Arbol2.JPG"
     },
     {
-        "id":"C2",
+        "id":"c2",
+        "type":"casas",
         "name":"Buho en ramas",
         "product":"Casa pájaros",
         "style":"Exteriores",
@@ -171,13 +184,14 @@
         "material":"Madera y ramas barnizadas",
         "detail":"Casa para aves de madera, con ramas barnizadas acompañado de un buho guardian. resistente al agua",
         "size":" Ancho:50cm largo:27cm alto:50cm",
-        "color":" Azul y rojo",
+        "color":" Cafe",
         "price":32.000,
-        "img1":"public/images/casasnido/C2/CAS-Mad-Ramas-Búho-2.JPG",
-        "img2":"public/images/casasnido/C2/CAS-Mad-Ramas-Búho.JPG"
+        "img1":"/images/casasnido/C2/CAS-Mad-Ramas-Búho-2.JPG",
+        "img2":"/images/casasnido/C2/CAS-Mad-Ramas-Búho.JPG"
     },
     {
-        "id":"C3",
+        "id":"c3",
+        "type":"casas",
         "name":"Gelato bird",
         "product":"Casa pájaros",
         "style":"Exteriores",
@@ -187,11 +201,12 @@
         "size":" Ancho:50cm lago:27cm alto:50cm",
         "color":" Blanco, rosado y rojo",
         "price":32.000,
-        "img1":"public/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos-2.JPG",
-        "img2":"public/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos.JPG"
+        "img1":"/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos-2.JPG",
+        "img2":"/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos.JPG"
     },
     {
-        "id":"C4",
+        "id":"c4",
+        "type":"casas",
         "name":"la jardinera",
         "product":"Casa pájaros",
         "style":"Exteriores",
@@ -201,11 +216,12 @@
         "size":" Ancho:31cm lago:24cm alto:45cm",
         "color":" Cafe tostado y turqueza",
         "price":45.000,
-        "img1":"public/images/casasnido/C4/CAS-Mad-c jardinera-burned-2.jpg",
-        "img2":"public/images/casasnido/C4/CAS-Mad-c jardinera-burned.jpg"
+        "img1":"/images/casasnido/C4/CAS-Mad-c jardinera-burned-2.jpg",
+        "img2":"/images/casasnido/C4/CAS-Mad-c jardinera-burned.jpg"
     },
     {
-        "id":"C5",
+        "id":"c5",
+        "type":"casas",
         "name":"Mexico",
         "product":"Casa pájaros",
         "style":"Exteriores",
@@ -215,7 +231,7 @@
         "size":" Ancho:28cm lago:24cm alto:34cm",
         "color":" Cafe tostado y rosado",
         "price":"35.000",
-        "img1":"public/images/casasnido/C5/CAS-Mad-Mex-escalera-doble-2.jpg",
-        "img2":"public/images/casasnido/C5/CAS-Mad-Mex-escalera-doble.jpg"
+        "img1":"/images/casasnido/C5/CAS-Mad-Mex-escalera-doble-2.jpg",
+        "img2":"/images/casasnido/C5/CAS-Mad-Mex-escalera-doble.jpg"
     }]
 }
