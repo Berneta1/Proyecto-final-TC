@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom'
 
+import { Link } from "react-router-dom"
+
 function OffcanvasExample() {
   return (
     <>
@@ -14,7 +16,9 @@ function OffcanvasExample() {
           <Container fluid>
             <Link to="/carrito"><i className="fa-solid fa-bag-shopping"></i></Link>
             <Link to="/">
+
               <img className='Header.img' src='/images/otras/logo.png'></img>
+
               </Link>
                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
