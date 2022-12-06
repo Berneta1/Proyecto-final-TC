@@ -1,5 +1,5 @@
 .navbar>.container-fluid {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     background-color: rgb(255, 255, 255);
 }
@@ -11,4 +11,70 @@
 
 .navbar-brand {
     text-align: center;
+}
+
+.contacto {
+    height: 360px;
+    width: 900px;
+    /* margin de 6 rem arriba y abajo y auto en los costados para que se centre en pantallas grandes*/
+    margin: 20rem auto;
+    /*para que en pantallas pequenas deje un pequeno margen al costado*/
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
+}
+
+.form-control{ 
+    width: 300px!important;
+    margin: 5px;
+}
+
+.name-email {
+    display: flex;
+}
+
+
+/* falta q  funcione los efectos hover del boton */
+button.send:before {
+     background-color: #988088;
+}
+
+button.send {
+    position: relative;
+      display: inline-block;
+      padding: 14px 28px;
+      line-height: normal;
+      border: 1px solid transparent;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 12px;
+      text-align: center;
+      letter-spacing: .2em;
+      font-weight: 500;
+      font-style: normal;
+      background-color: transparent;
+      -webkit-transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+      transition: color .45s cubic-bezier(.785,.135,.15,.86),border .45s cubic-bezier(.785,.135,.15,.86);
+      z-index: 1;
+      -webkit-tap-highlight-color: initial;
+  }
+
+button.send::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1,1);
+    transform: scale(1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    z-index: -1;
 }

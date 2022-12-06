@@ -1,0 +1,19 @@
+.detail-wrapper {
+    padding: 250px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.details {
+
+    justify-content: center;
+    align-items: center;
+}
