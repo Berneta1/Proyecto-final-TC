@@ -12,7 +12,7 @@
         "detail":"Base de fierro y Vitreaux",
         "size":"Alto: 37cm Diametro: 26cm",
         "color":"Naranjo, cafe y amarillo transparente",
-        "price":180.000,
+        "price":180000,
         "img1":"/images/lamparas/L1/LAM-Mes-Fie-Vitro.JPG",
         "img2":"/images/lamparas/L1/LAM-Mes-Fie-Vitro-Luz.JPG"
     },
@@ -28,7 +28,7 @@
         "detail":"Lampara tres caras en Base de fierro y hojas de parra en Vitreaux",
         "size":"",
         "color":"Verde, rojo y amarillo",
-        "price":110.000,
+        "price":110000,
         "img1":"/images/lamparas/L2/LAM-Mes-Hoj-Tri.JPG",
         "img2":"/images/lamparas/L2/LAM-Mes-Hoj-Tri-Luz.JPG"
     },
@@ -44,7 +44,7 @@
         "detail":"Lampara de cuatro caras en base de fierro y pantalla de flores Crossandra en Vitreaux",
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Naranjo",
-        "price":100.000,
+        "price":100000,
         "img1":"/images/lamparas/L3/LAM-Col-Flo-Cub.JPG",
         "img2":"/images/lamparas/L3/LAM-Col-Flo-Cub-Luz.JPG"
     },
@@ -60,7 +60,7 @@
         "detail":"Lampara de cuatro caras en base de fierro y pantalla de Enredadera con flores Pandora en Vitreaux",
         "size":"Alto:35cm, ancho:23cm",
         "color":"Verde y Rosado",
-        "price":100.000,
+        "price":100000,
         "img1":"/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub.JPG",
         "img2":"/images/lamparas/L4/LAM-Col-Bot-Hoj-Cub-Luz.JPG"
     },
@@ -76,7 +76,7 @@
         "detail":"Lampara de cuatro caras en base de fierro y pantalla de diversas flores en Vitreaux",
         "size":"",
         "color":"Violeta, celeste y verde ",
-        "price":130.000,
+        "price":130000,
         "img1":"/images/lamparas/L5/LAM-Pie-Fie-4caras.JPG",
         "img2":"/images/lamparas/L5/LAM-Pie-Fie-4caras-Luz.JPG"
     }
@@ -109,7 +109,7 @@
     "size":"50cm x 80cm",
     "detail":"Toalla Bordada con tematica de papas fritas",
     "color":"Rojo, blanco y naranjo",
-    "price":13.000,
+    "price":13000,
     "img1":"/images/bordados/T2/TOA-Coc-Papas fritas-2.JPG",
     "img2":"/images/bordados/T2/TOA-Coc-Papas fritas.JPG"
 },
@@ -124,7 +124,7 @@
     "size":"50cm x 80cm",
     "detail":"Toalla con bordado de corazones a nombre de Barbara",
     "color":"Azukino y blanco",
-    "price":15.000,
+    "price":15000,
     "img1":"/images/bordados/T3/TOA-Muj-Bárbara-Corazónes2.JPG",
     "img2":"/images/bordados/T3/TOA-Muj-Bárbara-Corazónes.JPG"
 },
@@ -139,7 +139,7 @@
     "size":"45cm x 65cm",
     "detail":"Toalla bordada para bebe",
     "color":"Verde agua",
-    "price":15.000,
+    "price":15000,
     "img1":"/images/bordados/T4/TOA-Beb-Caracól2.JPG",
     "img2":"/images/bordados/T4/TOA-Beb-Caracól.JPG"
 },
@@ -154,9 +154,9 @@
     "size":"70cm x 49cm",
     "detail":"Toalla bordada para bebe con detalles de Libelula",
     "color":"Azul oscuro y blanco",
-    "price":15.000,
-    "img1":"/images/bordados/T5/TOA-Beb-Libélulas-2.JPG",
-    "img2":"/images/bordados/T5/TOA-Beb-Libélulas.JPG"
+    "price":15000,
+    "img1":"/images/bordados/T5/TOA-Beb-Libélulas.JPG",
+    "img2":"/images/bordados/T5/TOA-Beb-Libélulas-2.JPG"
 }],
 "casasnido": [
     {
@@ -170,7 +170,7 @@
         "detail":"Casa para aves de madera, con tejado asfaltico resistente al agua",
         "size":" Ancho:40cm largo:30cm alto:30cm",
         "color":" Azul y rojo",
-        "price":30.000,
+        "price":30000,
         "img1":"/images/casasnido/C1/CAS-Mad-Teja-Arbol.JPG",
         "img2":"/images/casasnido/C1/CAS-Mad-Teja-Arbol2.JPG"
     },
@@ -185,7 +185,7 @@
         "detail":"Casa para aves de madera, con ramas barnizadas acompañado de un buho guardian. resistente al agua",
         "size":" Ancho:50cm largo:27cm alto:50cm",
         "color":" Cafe",
-        "price":32.000,
+        "price":32000,
         "img1":"/images/casasnido/C2/CAS-Mad-Ramas-Búho-2.JPG",
         "img2":"/images/casasnido/C2/CAS-Mad-Ramas-Búho.JPG"
     },
@@ -200,7 +200,7 @@
         "detail":"Casa para aves de madera con tematica de heladeria acompañado de toldos y llamativos colores. resistente al agua",
         "size":" Ancho:50cm lago:27cm alto:50cm",
         "color":" Blanco, rosado y rojo",
-        "price":32.000,
+        "price":32000,
         "img1":"/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos-2.JPG",
         "img2":"/images/casasnido/C3/CAS-Mad-Ice Cream c-toldos.JPG"
     },
@@ -215,7 +215,7 @@
         "detail":"Casa para aves de madera con jardinera y llamativos colores tostados. resistente al agua",
         "size":" Ancho:31cm lago:24cm alto:45cm",
         "color":" Cafe tostado y turqueza",
-        "price":45.000,
+        "price":45000,
         "img1":"/images/casasnido/C4/CAS-Mad-c jardinera-burned-2.jpg",
         "img2":"/images/casasnido/C4/CAS-Mad-c jardinera-burned.jpg"
     },

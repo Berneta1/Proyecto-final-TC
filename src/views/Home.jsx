@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import "../assets/styles/home.css"
+import { formatPrice } from "../components/utils/Utils.js"
 
 import Context from "../context/context"
 import { useNavigate } from "react-router-dom";
@@ -29,7 +30,7 @@ const Home = () => {
                                     </div>
                                 <div className="card-detail">
                                     <h4>{casa.name}</h4>
-                                    <p>${casa.price}</p>
+                                    <p>${formatPrice(casa.price)}</p>
                                 </div>
                             </div>
                         )
@@ -47,7 +48,7 @@ const Home = () => {
                                     </div>
                                 <div className="card-detail">
                                     <h4>{lampara.name}</h4>
-                                    <p>${lampara.price}</p>
+                                    <p>${formatPrice(lampara.price)}</p>
                                 </div>
                             </div>
                         )
@@ -65,7 +66,7 @@ const Home = () => {
                                     </div>
                                 <div className="card-detail">
                                     <h4>{bordado.name}</h4>
-                                    <p>${bordado.price}</p>
+                                    <p>${formatPrice(bordado.price)}</p>
                                 </div>
                             </div>
                         )

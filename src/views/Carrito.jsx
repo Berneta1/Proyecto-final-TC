@@ -1,4 +1,4 @@
-
+import { formatPrice } from "../components/utils/Utils.js"
 
 
 const Carrito = ()=> {

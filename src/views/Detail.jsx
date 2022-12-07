@@ -1,4 +1,5 @@
 import "../assets/styles/detail.css"
+import { formatPrice } from "../components/utils/Utils.js"
 import { useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 
@@ -7,7 +8,7 @@ import { useContext } from "react"
 
 const Detail = () => {
 
-    const { todos, casas, lamparas, bordados } = useContext(Context)
+    const { casas, lamparas, bordados } = useContext(Context)
 
     const { category, name } = useParams()
 
@@ -28,9 +29,9 @@ const Detail = () => {
                 <img className="detailimg" src={product.img1} alt={product.name}></img>
                 <img className="detailimg" src={product.img2} alt={product.name}></img>
             </div>
-            <div className="details">
+            <div className="productinfo">
                 <h3> {product.name} </h3>
-                <h4> ${product.price} </h4>
+                <h4> ${formatPrice(product.price)} </h4>
                 <tr>
                     <td><p>Tamaño:</p></td><td><p>{product.size}</p></td>
                 </tr>
