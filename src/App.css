@@ -37,6 +37,9 @@
     display: flex;
 }
 
+.galery {
+    margin: 20rem auto;
+}
 
 /* falta q  funcione los efectos hover del boton */
 button.send:before {
