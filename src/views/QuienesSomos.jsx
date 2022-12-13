@@ -12,7 +12,7 @@ const QuienesSomos = ()=> {
         <p className="card-text text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id quia veniam temporibus placeat esse, accusamus nam expedita laudantium suscipit atque doloribus dolores doloremque modi est at ratione. Eaque sit iste, quis deserunt dignissimos non officia modi. Ipsam, iure quaerat neque illo cumque quibusdam repellendus, ut delectus enim, rerum reiciendis magni.</p>
         <p className="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil aut ipsam praesentium minus architecto deserunt unde dolorum alias perferendis adipisci natus vitae sequi, voluptate expedita laudantium dignissimos suscipit earum vel qui molestiae! Molestias, voluptatum aliquam vitae molestiae debitis, ratione officiis iste natus repudiandae nobis sequi dolore ad assumenda. Omnis cumque atque rem quam delectus, necessitatibus in ut suscipit ipsam consequuntur. Deleniti deserunt ad velit. Natus.</p>
         <p className="card-text text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolore facere exercitationem at animi ratione quaerat ipsa veritatis mollitia suscipit voluptatibus, nesciunt molestiae dignissimos magni recusandae eos sequi eum. Ex.</p>
-        <p className="card-text"><small className="text-muted">Lorem ipsum dolor sit.</small></p>
+        <p className="card-text"><small className="text-muted">Lorem ipsum dolor sitas.</small></p>
       </div>
     </div>
   </div>
