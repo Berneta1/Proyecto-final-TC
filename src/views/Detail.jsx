@@ -1,6 +1,7 @@
 import "../assets/styles/detail.css"
 import { formatPrice } from "../components/utils/Utils.js"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
+
 import { useState, useEffect } from "react"
 
 import Context from "../context/context"
@@ -8,10 +9,10 @@ import { useContext } from "react"
 
 const Detail = () => {
 
-    const { casas, lamparas, bordados } = useContext(Context)
+    const { casas, lamparas, bordados, addToCart } = useContext(Context)
 
     const { category, name } = useParams()
-
+   
 
     let currentCategory
 
@@ -22,6 +23,8 @@ const Detail = () => {
     const product = currentCategory.find(p => p.id == name)
     console.log(product)
 
+    const navigate = useNavigate()
+    const viewProduct = ()=> navigate(`/carrito`)
 
     return (
         <div className="detail-wrapper">
@@ -45,11 +48,14 @@ const Detail = () => {
                     <td><p>Descripcion: </p></td><td>{product.detail}</td>
                 </tr>
 
-
+5.30
             </div>
+<div className="btn-now">
 
+<button className="btn btn-primary" onClick={()=>viewProduct(addToCart(product))}>comprar</button>
+</div>
         </div>
-
+          
     )
 
 }

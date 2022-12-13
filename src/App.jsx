@@ -26,6 +26,25 @@ function App() {
     const [bordados, setBordados] = useState([])
     const [todos, setTodos]= useState([])
     const dataProductos = "/productos.json";
+
+    const[cart,setCart]=useState([])
+
+    const addToCart=(item)=>{
+        const itemIndex = cart.findIndex((product)=> product.id==item.id)
+        const updateCart = [...cart]
+      if (itemIndex === -1) {
+        const product = {
+          id: item.id,
+          count:1,
+          price: item.img1,
+          name: item.name
+        }
+        updateCart.push(product)
+      }else{
+        updateCart[itemIndex].count += 1
+      }
+      setCart(updateCart)
+      }
   
     useEffect(() => {
         fetch(dataProductos)
@@ -39,8 +58,9 @@ function App() {
           .catch((e) => console.log(e))
       }, []);
 
-      const globalState = { todos, casas, lamparas, bordados }
-      
+      const globalState = { todos, casas, lamparas, bordados, cart, addToCart}
+
+     
     return (
         <div className="App">
         <Context.Provider value={globalState}>
