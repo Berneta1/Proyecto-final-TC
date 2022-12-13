@@ -98,6 +98,10 @@ button.send::before {
   border: 0;
 }
 
+ .carrito{
+    margin-top: 300px;
+ }
+=======
 .nosotros {
   max-width: 1200px;
   padding-top: 222px;
@@ -109,3 +113,4 @@ button.send::before {
   align-items: center;
   justify-content: center;
 }
+
