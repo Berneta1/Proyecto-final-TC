@@ -20,8 +20,9 @@ const Bordados = () => {
           {bordados.map((bordado) => {
             return (
               <div key={bordado.id} className="card">
-                <div className="card-img">
-                  <img src={bordado.img1} alt={bordado.name} onClick={() => navigate(`/${bordado.type}/${createRoute(bordado.id)}`)} />
+                <div id="cf">
+                  <img className="bottom"src={bordado.img1} alt={bordado.name}/>
+                  <img className="top" src={bordado.img2} alt={bordado.name} onClick={() => navigate(`/${bordado.type}/${createRoute(bordado.id)}`)}  ></img>
                 </div>
                 <div className="card-detail">
                   <h4>{bordado.name}</h4>

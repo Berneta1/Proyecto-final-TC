@@ -14,11 +14,9 @@ function OffcanvasExample() {
           <Container fluid>
             <Link to="/carrito"><i className="fa-solid fa-bag-shopping"></i></Link>
             <Link to="/">
-
-              <img className='Header.img' src='/images/otras/logo.png'></img>
-
-              </Link>
-               <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+              <img className='header-img' src='/images/otras/logo.png'></img>
+            </Link>
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
@@ -42,7 +40,7 @@ function OffcanvasExample() {
                     type="search"
                     placeholder="Search"
                     className="me-2"
-                    aria-label="Search"/>
+                    aria-label="Search" />
                   <Button variant="outline-success">Buscar</Button>
                 </Form>
               </Offcanvas.Body>

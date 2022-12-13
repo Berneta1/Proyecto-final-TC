@@ -25,8 +25,9 @@ const Home = () => {
                         return (
                             <div key={casa.id}
                                  className="card">
-                                    <div className="card-img">
-                                        <img src={casa.img1} alt={casa.name} onClick={() => navigate(`/${casa.type}/${createRoute(casa.id)}`)}></img>
+                                    <div id="cf">
+                                        <img className="bottom" src={casa.img1} alt={casa.name} ></img>
+                                        <img className="top" src={casa.img2} alt={casa.name} onClick={() => navigate(`/${casa.type}/${createRoute(casa.id)}`)} ></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>{casa.name}</h4>
@@ -43,8 +44,9 @@ const Home = () => {
                         return (
                             <div key={lampara.id}
                                  className="card">
-                                    <div className="card-img">
-                                        <img src={lampara.img2} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)} ></img>
+                                    <div id="cf">
+                                        <img className="bottom" src={lampara.img2} alt={lampara.name} ></img>
+                                        <img className="top" src={lampara.img1} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)} ></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>{lampara.name}</h4>
@@ -61,8 +63,9 @@ const Home = () => {
                         return (
                             <div key={bordado.id}
                                  className="card">
-                                    <div className="card-img">
-                                        <img src={bordado.img2} alt={bordado.name} onClick={() => navigate(`/${bordado.type}/${createRoute(bordado.id)}`)}></img>
+                                    <div id="cf">
+                                        <img className="bottom" src={bordado.img2} alt={bordado.name} ></img>
+                                        <img className="top" src={bordado.img1} alt={bordado.name} onClick={() => navigate(`/${bordado.type}/${createRoute(bordado.id)}`)}  ></img>
                                     </div>
                                 <div className="card-detail">
                                     <h4>{bordado.name}</h4>

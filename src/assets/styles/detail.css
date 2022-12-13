@@ -4,7 +4,7 @@
     /* margin de 6 rem arriba y abajo y auto en los costados para que se centre en pantallas grandes*/
     margin: 20rem auto;
     /*para que en pantallas pequenas deje un pequeno margen al costado*/
-    padding: 0 2rem;
+    padding: 2rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;

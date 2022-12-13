@@ -22,8 +22,9 @@ const Lamparas = () => {
                             return (
                                 <div key={lampara.id}
                                     className="card">
-                                    <div className="card-img">
-                                        <img src={lampara.img1} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)}></img>
+                                    <div id="cf">
+                                        <img className="bottom"src={lampara.img1} alt={lampara.name}></img>
+                                        <img className="top" src={lampara.img2} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)} ></img>
                                     </div>
                                     <div className="card-detail">
                                         <h4>{lampara.name}</h4>

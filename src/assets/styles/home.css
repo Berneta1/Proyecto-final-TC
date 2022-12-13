@@ -1,35 +1,28 @@
 .home-img {
-    background-image: url("https://images.unsplash.com/photo-1504972090022-6edb81e4e534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: right 0 top 60%;
-    height: 40rem;
+  background-image: url("https://images.unsplash.com/photo-1504972090022-6edb81e4e534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 0 top 60%;
+  height: 40rem;
+  margin-top: 200px;
 }
 
-.home-img h1{
-    color: rgb(255, 255, 255);
-    text-align: center;
+.home-img h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 .galeria {
-    display: grid;
-    gap: 80px;
-  }
-  
-  .grid-columns-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .card {
-    text-align: center;
-    background: none;
-    border: none;
-    
-  }
+  display: grid;
+  gap: 80px;
+}
 
-  .card-img, img{
-    max-height:400px;
-    cursor: pointer;
-    margin-bottom: 25px;
-    
-  }
+.grid-columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  text-align: center;
+  background: none;
+  border: none;
+}

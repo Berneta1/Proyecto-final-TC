@@ -20,8 +20,9 @@ const CasaPajaros = () => {
           {casas.map((casa) => {
             return (
               <div key={casa.id} className="card">
-                <div className="card-img">
-                  <img src={casa.img1} alt={casa.name} onClick={() => navigate(`/${casa.type}/${createRoute(casa.id)}`)} />
+                <div id="cf">
+                  <img className="bottom"src={casa.img1} alt={casa.name}/>
+                  <img className="top" src={casa.img2} alt={casa.name} onClick={() => navigate(`/${casa.type}/${createRoute(casa.id)}`)} ></img>
                 </div>
                 <div className="card-detail">
                   <h4>{casa.name}</h4>
