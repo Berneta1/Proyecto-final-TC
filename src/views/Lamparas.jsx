@@ -30,34 +30,36 @@ const Lamparas = () => {
     } else {
       sortedData.sort((a, b) => b.name.localeCompare(a.name));
     }
-
-    return sortedData;
+      return sortedData;
   };
 
-  return (
-    <main>
-      <div className="galery">
-        <select onChange={(e) => setOrder(e.target.value)}>
+
+    return (
+        <main>
+            <div className="galery">
+             <select onChange={(e) => setOrder(e.target.value)}>
           <option value="asc">Ordenar A-Z</option>
           <option value="desc">Ordenar Z-A</option>
         </select>
+                <div className="galeria grid-columns-4 p-3">
+                    {
+                        lamparas.map((lampara) => {
+                            return (
+                                <div key={lampara.id}
+                                    className="card">
+                                    <div id="cf">
+                                        <img className="bottom"src={lampara.img1} alt={lampara.name}></img>
+                                        <img className="top" src={lampara.img2} alt={lampara.name} onClick={() => navigate(`/${lampara.type}/${createRoute(lampara.id)}`)} ></img>
+                                    </div>
+                                    <div className="card-detail">
+                                        <h4>{lampara.name}</h4>
+                                        <p>${formatPrice(lampara.price)}</p>
+                                    </div>
+                                </div>
+                            )
+                        }
+                        )}
 
-        <div className="galeria grid-columns-4 p-3">
-          {data.map((lampara) => {
-            return (
-              <div key={lampara.id} className="card">
-                <div className="card-img">
-                  <img
-                    src={lampara.img1}
-                    alt={lampara.name}
-                    onClick={() =>
-                      navigate(`/${lampara.type}/${createRoute(lampara.id)}`)
-                    }
-                  ></img>
-                </div>
-                <div className="card-detail">
-                  <h4>{lampara.name}</h4>
-                  <p>${formatPrice(lampara.price)}</p>
                 </div>
               </div>
             );

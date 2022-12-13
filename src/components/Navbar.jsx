@@ -17,6 +17,7 @@ function OffcanvasExample() {
           className="navbar fixed-top"
         >
           <Container fluid>
+
             <div>
               <Link to="/carrito">
                 <i className="fa-solid fa-bag-shopping"></i>
