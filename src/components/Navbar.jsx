@@ -49,15 +49,6 @@ function OffcanvasExample() {
                   <Link to="/contactanos">Contactanos</Link>
                   <Link to="/login">Admin</Link>
                 </Nav>
-                <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Buscar</Button>
-                </Form>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>

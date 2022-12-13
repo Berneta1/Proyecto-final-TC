@@ -37,28 +37,21 @@ const Busqueda = () => {
 
 
       <div className="buscar">
-        <input
-          type="text"
-          placeholder="Buscar producto"
-          onChange={(e) => setValue(e.target.value)}
-        />
+      <div className="search-box">
+                <input className="buscador"type="text" required onChange={(e) => setValue(e.target.value)}></input>
+                <i className="fa fa-search"></i>
+            </div>
+    
       </div>
-      
-      <h4 className="descripcion">{`${result.length} Productos encontrados`}</h4>
 
-      <div className="container">
+      <h4 className="descripcion">{`${result.length} Productos encontrados`}</h4>
         <div className="galeria grid-columns-4 p-3">
           {result.map((filtrado) => {
             return (
               <div key={filtrado.id} className="card">
-                <div className="card-img">
-                  <img
-                    src={filtrado.img1}
-                    alt={filtrado.name}
-                    onClick={() =>
-                      navigate(`/${filtrado.type}/${createRoute(filtrado.id)}`)
-                    }
-                  ></img>
+                <div id="cf">
+                  <img className="bottom"src={filtrado.img1} alt={filtrado.name}></img>
+                  <img className="top" src={filtrado.img2} alt={filtrado.name} onClick={() => navigate(`/${filtrado.type}/${createRoute(filtrado.id)}`)}  ></img>
                 </div>
                 <div className="card-detail">
                   <h4>{filtrado.name}</h4>
@@ -68,7 +61,6 @@ const Busqueda = () => {
             );
           })}
         </div>
-      </div>
     </>
   );
 };

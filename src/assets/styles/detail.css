@@ -2,7 +2,7 @@
     height: fit-content;
     width: 900px;
     /* margin de 6 rem arriba y abajo y auto en los costados para que se centre en pantallas grandes*/
-    margin: 20rem auto;
+    margin: auto;
     /*para que en pantallas pequenas deje un pequeno margen al costado*/
     padding: 2rem 2rem;
     display: flex;
@@ -10,15 +10,37 @@
     justify-content: center;
     box-shadow: 0px 9px 16px rgba(0, 0, 0, 0.25);
 }
+
+.detalle h1 {
+    text-align: center;
+    margin-top: 16rem;
+}
+
 .images {
     display: flex;
     flex-direction: column;
-    
-    
+    margin-bottom: 2rem;
+    width: 300px;
 }
 
-.productinfo {
-    text-align: center;
+.detailimg{
+    margin-bottom: 1rem;
+}
+
+.productinfo .detail-title {
     justify-content: center;
+    text-align: center;
+}
+
+.comprar button {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 6%;
+}
+
+.comprar{
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
 }

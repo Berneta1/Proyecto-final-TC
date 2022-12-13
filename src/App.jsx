@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import ProtectedRoute from './components/ProtectedRoute.jsx'
-
-
 import NavBar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx';
 //views
@@ -27,93 +25,74 @@ import Context from './context/context.js'
 
 
 function App() {
-    //creamos los estados, solicitamos la data a la api, clasificamos por tipo de producto y la pasamos a un estado global.
-    const [casas, setCasas] = useState([])
-    const [lamparas, setLamparas] = useState([])
-    const [bordados, setBordados] = useState([])
-    const [todos, setTodos] = useState([])
-    const dataProductos = "/productos.json";
+  //creamos los estados, solicitamos la data a la api, clasificamos por tipo de producto y la pasamos a un estado global.
+  const [casas, setCasas] = useState([])
+  const [lamparas, setLamparas] = useState([])
+  const [bordados, setBordados] = useState([])
+  const [todos, setTodos] = useState([])
+  const [cart, setCart] = useState([])
+  const dataProductos = "/productos.json";
 
+  useEffect(() => {
+    fetch(dataProductos)
+      .then((res) => res.json())
+      .then((json) => {
+        setCasas(json.casasnido)
+        setLamparas(json.lamparas)
+        setBordados(json.bordados)
+        setTodos(json.todos)
+      })
+      .catch((e) => console.log(e))
+  }, []);
 
-    useEffect(() => {
-        fetch(dataProductos)
-            .then((res) => res.json())
-            .then((json) => {
-                setCasas(json.casasnido)
-                setLamparas(json.lamparas)
-                setBordados(json.bordados)
-                setTodos(json)
-            })
-            .catch((e) => console.log(e))
-    }, []);
-
-    const globalState = { todos, casas, lamparas, bordados }
-
-    const[cart,setCart]=useState([])
-
-    const addToCart=(item)=>{
-        const itemIndex = cart.findIndex((product)=> product.id==item.id)
-        const updateCart = [...cart]
-      if (itemIndex === -1) {
-        const product = {
-          id: item.id,
-          count:1,
-          price: item.img1,
-          name: item.name
-        }
-        updateCart.push(product)
-      }else{
-        updateCart[itemIndex].count += 1
+  const addToCart = (item) => {
+    const itemIndex = cart.findIndex((product) => product.id == item.id)
+    const updateCart = [...cart]
+    if (itemIndex === -1) {
+      const product = {
+        id: item.id,
+        count: 1,
+        price: item.img1,
+        name: item.name
       }
-      setCart(updateCart)
-      }
-  
-    useEffect(() => {
-        fetch(dataProductos)
-          .then((res) => res.json())
-          .then((json) => {   
-            console.log(json)      
-            setCasas(json.casasnido)
-            setLamparas(json.lamparas)
-            setBordados(json.bordados)
-            setTodos(json.todos)
-          })
-          .catch((e) => console.log(e))
-      }, []);
+      updateCart.push(product)
+    } else {
+      updateCart[itemIndex].count += 1
+    }
+    setCart(updateCart)
+  }
 
-      const globalState = { todos, casas, lamparas, bordados, cart, addToCart}
+  const globalState = { todos, casas, lamparas, bordados, cart, addToCart }
 
-     
+  return (
+    <div className="App">
+      <Context.Provider value={globalState}>
+        <BrowserRouter>
+          <NavBar></NavBar>
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/carrito' element={<Carrito />}></Route>
+            <Route path='/bordados' element={<Bordados />}></Route>
+            <Route path='/casapajaros' element={<CasaPajaros />} ></Route>
+            <Route path='/lamparas' element={<Lamparas />} ></Route>
+            <Route path='/quienessomos' element={<QuienesSomos />}></Route>
+            <Route path='/contactanos' element={<Contactanos />}></Route>
+            <Route path='/buscar' element={<Buscar />}></Route>
+            <Route path='*' element={<NotFound />}></Route>
+            <Route path='/:category/:name' element={<Detail />}></Route>
+            <Route path='/login' element={<Login />}></Route>
+            <Route path='/admin' element={
+              <ProtectedRoute>
+                <Admin></Admin>
+              </ProtectedRoute>
+            }></Route>
+          </Routes>
+          <Footer></Footer>
+        </BrowserRouter>
+      </Context.Provider>
 
-    return (
-        <div className="App">
-            <Context.Provider value={globalState}>
-                <BrowserRouter>
-                    <NavBar></NavBar>
-                    <Routes>
-                        <Route path='/' element={<Home />}></Route>
-                        <Route path='/carrito' element={<Carrito />}></Route>
-                        <Route path='/bordados' element={<Bordados />}></Route>
-                        <Route path='/casapajaros' element={<CasaPajaros />} ></Route>
-                        <Route path='/lamparas' element={<Lamparas />} ></Route>
-                        <Route path='/quienessomos' element={<QuienesSomos />}></Route>
-                        <Route path='/contactanos' element={<Contactanos />}></Route>
-                        <Route path='/buscar' element={ <Buscar />}></Route>
-                        <Route path='*' element={<NotFound />}></Route>
-                        <Route path='/:category/:name' element={<Detail />}></Route>
-                        <Route path='/login' element={<Login />}></Route>
-                        <Route path='/admin' element={
-                            <ProtectedRoute>
-                                <Admin></Admin>
-                            </ProtectedRoute>
-                        }></Route>
-                    </Routes>
-                    <Footer></Footer>
-                </BrowserRouter>
-            </Context.Provider>
-
-        </div>
-    )
+    </div>
+  )
 }
 
 export default App

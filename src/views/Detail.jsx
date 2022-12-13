@@ -12,7 +12,7 @@ const Detail = () => {
     const { casas, lamparas, bordados, addToCart } = useContext(Context)
 
     const { category, name } = useParams()
-   
+
 
     let currentCategory
 
@@ -24,40 +24,47 @@ const Detail = () => {
     console.log(product)
 
     const navigate = useNavigate()
-    const viewProduct = ()=> navigate(`/carrito`)
+    const viewProduct = () => navigate(`/carrito`)
 
     return (
-        <div className="detail-wrapper">
-            <div className="images">
-                <img className="detailimg" src={product.img1} alt={product.name}></img>
-                <img className="detailimg" src={product.img2} alt={product.name}></img>
-            </div>
-            <div className="productinfo">
-                <h3> {product.name} </h3>
-                <h4> ${formatPrice(product.price)} </h4>
-                <tr>
-                    <td><p>Tamaño:</p></td><td><p>{product.size}</p></td>
-                </tr>
-                <tr>
-                    <td><p>Material: </p></td><td>{product.material}</td>
-                </tr>
-                <tr>
-                    <td><p>Color:</p></td><td>{product.color}</td>
-                </tr>
-                <tr>
-                    <td><p>Descripcion: </p></td><td>{product.detail}</td>
-                </tr>
+        <div className="detalle">
+            <h1>Detalle</h1>
+            <div className="detail-wrapper">
 
-5.30
-            </div>
-<div className="btn-now">
+                <div className="images">
+                    <img className="detailimg" src={product.img1} alt={product.name}></img>
+                    <img className="detailimg" src={product.img2} alt={product.name}></img>
+                </div>
 
-<button className="btn btn-primary" onClick={()=>viewProduct(addToCart(product))}>comprar</button>
-</div>
+                <div className="productinfo">
+                    <div className="detail-title">
+                        <h3> {product.name} </h3>
+                        <h4> ${formatPrice(product.price)} </h4>
+                    </div>
+                    <tr>
+                        <td><p>Tamaño:</p></td><td><p>{product.size}</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Material: </p></td><td>{product.material}</td>
+                    </tr>
+                    <tr>
+                        <td><p>Color:</p></td><td>{product.color}</td>
+                    </tr>
+                    <tr>
+                        <td><p>Descripcion: </p></td><td> { product.detail}</td>
+                    </tr>
+                    <div className="comprar">
+                     <button  onClick={() => viewProduct(addToCart(product))}>Comprar</button>
+                    </div>
+                    
+                </div>
+
+
+            </div>
         </div>
-          
     )
 
 }
+
 
 export default Detail

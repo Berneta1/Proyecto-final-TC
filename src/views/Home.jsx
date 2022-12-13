@@ -17,7 +17,11 @@ const Home = () => {
     return (
         <main>
             <div className="home-img">
-                <h1>Arte hecho con amor </h1>
+                <div className="text-box">
+                    <h1>Arte hecho con amor</h1>
+                    <h3> Productos Unicos y con una exclusividad que personaliza tu espacio</h3>
+                </div>
+                
             </div>
             <div className="galeria grid-columns-4 p-3">
                 {
