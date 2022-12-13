@@ -1,6 +1,7 @@
 import { formatPrice } from "./utils/Utils.js";
 
 const ListadoCarrito = ({ cart }) => {
+  console.log(cart)
   return (
     <div>
       <ul>

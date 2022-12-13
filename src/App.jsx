@@ -52,7 +52,8 @@ function App() {
       const product = {
         id: item.id,
         count: 1,
-        price: item.img1,
+        price: item.price,
+        img1: item.img1,
         name: item.name
       }
       updateCart.push(product)
