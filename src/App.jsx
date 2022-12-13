@@ -4,8 +4,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+//componentes
 import NavBar from './components/Navbar.jsx'
-import Context from './context/context.js'
+import Footer from './components/Footer.jsx';
+//views
 import Carrito from './views/Carrito.jsx'
 import Bordados from './views/Bordados.jsx'
 import CasaPajaros from './views/Casapajaros.jsx'
@@ -15,8 +17,10 @@ import NotFound from './views/Notfound.jsx'
 import QuienesSomos from './views/QuienesSomos.jsx'
 import Contactanos from './views/Contactanos.jsx'
 import Detail from './views/detail.jsx';
-import Footer from './components/Footer.jsx';
+import Buscar from './views/Buscar.jsx'
 import Login from './views/Login';
+
+import Context from './context/context.js'
 
 
 function App() {
@@ -49,11 +53,12 @@ function App() {
     useEffect(() => {
         fetch(dataProductos)
           .then((res) => res.json())
-          .then((json) => {         
+          .then((json) => {   
+            console.log(json)      
             setCasas(json.casasnido)
             setLamparas(json.lamparas)
             setBordados(json.bordados)
-            setTodos(json)
+            setTodos(json.todos)
           })
           .catch((e) => console.log(e))
       }, []);
@@ -74,6 +79,7 @@ function App() {
                         <Route path='/lamparas' element={<Lamparas />} ></Route>
                         <Route path='/quienessomos' element={<QuienesSomos />}></Route>
                         <Route path='/contactanos' element={<Contactanos />}></Route>
+                        <Route path='/buscar' element={ <Buscar />}></Route>
                         <Route path='*' element={<NotFound />}></Route>
                         <Route path='/:category/:name' element={ <Detail />}></Route>
                         <Route path='/login' element={ <Login />}></Route>
