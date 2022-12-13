@@ -5,8 +5,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 import ProtectedRoute from './components/ProtectedRoute.jsx'
+
+
 import NavBar from './components/Navbar.jsx'
-import Context from './context/context.js'
+import Footer from './components/Footer.jsx';
+//views
 import Carrito from './views/Carrito.jsx'
 import Bordados from './views/Bordados.jsx'
 import CasaPajaros from './views/Casapajaros.jsx'
@@ -16,9 +19,11 @@ import NotFound from './views/Notfound.jsx'
 import QuienesSomos from './views/QuienesSomos.jsx'
 import Contactanos from './views/Contactanos.jsx'
 import Detail from './views/detail.jsx';
-import Footer from './components/Footer.jsx';
+import Buscar from './views/Buscar.jsx'
 import Login from './views/Login';
 import Admin from './views/Admin';
+
+import Context from './context/context.js'
 
 
 function App() {
@@ -28,6 +33,7 @@ function App() {
     const [bordados, setBordados] = useState([])
     const [todos, setTodos] = useState([])
     const dataProductos = "/productos.json";
+
 
     useEffect(() => {
         fetch(dataProductos)
@@ -43,6 +49,42 @@ function App() {
 
     const globalState = { todos, casas, lamparas, bordados }
 
+    const[cart,setCart]=useState([])
+
+    const addToCart=(item)=>{
+        const itemIndex = cart.findIndex((product)=> product.id==item.id)
+        const updateCart = [...cart]
+      if (itemIndex === -1) {
+        const product = {
+          id: item.id,
+          count:1,
+          price: item.img1,
+          name: item.name
+        }
+        updateCart.push(product)
+      }else{
+        updateCart[itemIndex].count += 1
+      }
+      setCart(updateCart)
+      }
+  
+    useEffect(() => {
+        fetch(dataProductos)
+          .then((res) => res.json())
+          .then((json) => {   
+            console.log(json)      
+            setCasas(json.casasnido)
+            setLamparas(json.lamparas)
+            setBordados(json.bordados)
+            setTodos(json.todos)
+          })
+          .catch((e) => console.log(e))
+      }, []);
+
+      const globalState = { todos, casas, lamparas, bordados, cart, addToCart}
+
+     
+
     return (
         <div className="App">
             <Context.Provider value={globalState}>
@@ -56,6 +98,7 @@ function App() {
                         <Route path='/lamparas' element={<Lamparas />} ></Route>
                         <Route path='/quienessomos' element={<QuienesSomos />}></Route>
                         <Route path='/contactanos' element={<Contactanos />}></Route>
+                        <Route path='/buscar' element={ <Buscar />}></Route>
                         <Route path='*' element={<NotFound />}></Route>
                         <Route path='/:category/:name' element={<Detail />}></Route>
                         <Route path='/login' element={<Login />}></Route>

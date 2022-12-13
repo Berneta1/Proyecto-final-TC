@@ -1,7 +1,7 @@
-.navbar>.container-fluid {
-    display: flex;
-    flex-direction: row-reverse;
-    background-color: rgb(255, 255, 255);
+.navbar > .container-fluid {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar-toggler-icon {
@@ -14,13 +14,14 @@
 }
 
 .fa-solid {
-    font-size: 30px;
-    margin-right: 30px;
+  font-size: 30px;
+  margin-right: 30px;
 }
 
 .navbar-brand {
-    text-align: center;
+  text-align: center;
 }
+
 
 .admin-menu {
     margin: 20rem auto;
@@ -50,12 +51,13 @@
 }
 
 .name-email {
-    display: flex;
+  display: flex;
 }
 
 .galery {
-    margin: 20rem auto;
+  margin: 20rem auto;
 }
+
 
 #cf {
     position: relative;
@@ -93,6 +95,7 @@ button::before button::after {
     position: absolute;
     content: "";
     z-index: -1;
+
 }
 
 button:hover {
@@ -102,6 +105,7 @@ button:hover {
 }
 
 .notfound {
+
     padding: 6rem 0;
     margin: 0 auto;
     display: flex;
@@ -115,6 +119,20 @@ button:hover {
     border: 0;
 }
 
+ .carrito{
+    margin-top: 300px;
+ }
+
 .nosotros {
-    max-width: 1200px;
+  max-width: 1200px;
+  padding-top: 222px;
 }
+
+.buscar {
+  margin-top: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
