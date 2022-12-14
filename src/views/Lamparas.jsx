@@ -41,6 +41,9 @@ const Lamparas = () => {
                     <option value="asc">Ordenar A-Z</option>
                     <option value="desc">Ordenar Z-A</option>
                 </select>
+                <div className="subtitle">
+                    <h2>Lamparas</h2>
+                </div>
                 <div className="galeria grid-columns-4 p-3">
                     {
                         lamparas.map((lampara) => {

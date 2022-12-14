@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Busqueda = () => {
   const { todos } = useContext(Context); // data para filtrar
-  const [value, setValue] = useState(""); // data string ingresada por imput
+  const [value, setValue] = useState("-"); // data string ingresada por imput
   const [result, setResult] = useState([]); // resultado de la busqueda en array
 
   const navigate = useNavigate();
@@ -15,7 +15,8 @@ const Busqueda = () => {
     return lowerCase.replaceAll(" ", "-");
   };
   useEffect(() => {
-    filterData();
+    if (value==""){setValue ("-")}
+    else {filterData()}
   }, [value]);
 
   const filterData = () => {

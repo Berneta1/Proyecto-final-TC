@@ -18,12 +18,16 @@ const Home = () => {
         <main>
             <div className="home-img">
                 <div className="text-box">
-                    <h1>Arte hecho con amor</h1>
-                    <h3> Productos Unicos y con una exclusividad que personaliza tu espacio</h3>
+                    <h1 className="display-1 fw-bold my-5">Arte hecho con amor</h1>
+                    <h3 className="my-5"> Productos Unicos y con la exclusividad que personaliza tu espacio</h3>
                 </div>
                 
             </div>
+            <div className="subtitle">
+                    <h2>Casas nido</h2>
+                </div>
             <div className="galeria grid-columns-4 p-3">
+                
                 {
                     casas.slice(0,4).map((casa) => {
                         return (
@@ -35,13 +39,16 @@ const Home = () => {
                                     </div>
                                 <div className="card-detail">
                                     <h4>{casa.name}</h4>
-                                    <p>${formatPrice(casa.price)}</p>
+                                    <p className="price">${formatPrice(casa.price)}</p>
                                 </div>
                             </div>
                         )
                     }
                     )}
             </div>
+            <div className="subtitle">
+                    <h2>Lamparas</h2>
+                </div>
             <div className="galeria grid-columns-4 p-3">
                 {
                     lamparas.slice(0,4).map((lampara) => {
@@ -61,6 +68,9 @@ const Home = () => {
                     }
                     )}
             </div>
+            <div className="subtitle">
+                    <h2>Bordados</h2>
+                </div>
             <div className="galeria grid-columns-4 p-3">
                 {
                     bordados.slice(0,4).map((bordado) => {

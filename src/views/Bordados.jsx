@@ -41,7 +41,9 @@ const sortData = (data) => {
           <option value="asc">Ordenar A-Z</option>
           <option value="desc">Ordenar Z-A</option>
         </select>
-
+        <div className="subtitle">
+                    <h2>Bordados</h2>
+                </div>
         <div className="galeria grid-columns-4 p-3">
           {data.map((bordado) => {
             return (
