@@ -58,7 +58,7 @@ function App() {
       };
       updateCart.push(product);
     } else {
-      updateCart[itemIndex].count += 1;
+      alert ("Este producto ya existe en el carro")
     }
     setCart(updateCart);
   };

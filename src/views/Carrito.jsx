@@ -15,10 +15,7 @@ const Carrito = () => {
         <p className="oferta">Tu envío es gratis!</p>
       ) : (
         <p>
-          {" "}
-          Te faltan{" "}
-          <span className="oferta">{formatPrice(150000 - cartTotal())} </span>
-          para que tu envío sea gratis.
+          Te faltan <span className="oferta">{formatPrice(150000 - cartTotal())} </span> para que tu envío sea gratis.
         </p>
       )}
 

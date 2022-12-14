@@ -17,10 +17,9 @@ function OffcanvasExample() {
           className="navbar fixed-top"
         >
           <Container fluid>
-
             <div>
               <Link to="/carrito">
-                <i className="fa-solid fa-bag-shopping"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
               </Link>
               <Link to="/buscar">
                 <i className="fa-solid fa-magnifying-glass"></i>
