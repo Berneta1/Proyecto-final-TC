@@ -28,7 +28,7 @@ const ListadoCarrito = ({ cart, removeFromCart, cartTotal }) => {
       <div className="total">
         <h5>Total: ${formatPrice(cartTotal())}</h5>
         <Link to="/checkout">
-          <button className="btn-pay">Pagar</button>
+          Pagar
         </Link>
       </div>
     </div>

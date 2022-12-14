@@ -29,7 +29,7 @@ const Carrito = () => {
         <div className="noProducts">
           <p>No hay productos agregados </p>
           <Link to="/">
-            <button>Compra acá</button>
+            Compra acá
           </Link>
         </div>
       )}

@@ -9,7 +9,7 @@ const Checkout = () => {
       />
       <p>Redireccionando a tu medio de pago...</p>
       <Link to="/carrito">
-      <button className="btn-back">Volver</button>
+      VOLVER
       </Link>
     </main>
   );
