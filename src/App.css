@@ -407,3 +407,17 @@ a:hover::before {
   margin-bottom:0;
 }
 
+.notfound {
+  padding-top: 10rem;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: calc(100vh);
+}
+
+.notfound img {
+  border: 0;
+  height: 300px;
+}
