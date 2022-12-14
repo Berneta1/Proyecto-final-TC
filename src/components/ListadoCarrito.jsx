@@ -1,24 +1,36 @@
 import { formatPrice } from "./utils/Utils.js";
+import { Link } from "react-router-dom";
 
-const ListadoCarrito = ({ cart }) => {
-  console.log(cart)
+const ListadoCarrito = ({ cart, removeFromCart, cartTotal }) => {
   return (
-    <div>
-      <ul>
-        {cart.map((product) => {
+    <div className="cart-view">
+       <ul>
+        {cart.map((item) => {
           return (
-            <li key={product.id}>
-              <div className="productCart">
-                <img src={product.img1} alt={product.name}></img>
-                <h4>{product.name}</h4>
+            <li key={item.id}>
+              <div className="product">
+                <img src={item.img1} alt={item.name} />
+                <h5>{item.name}</h5>
               </div>
               <div className="price">
-                <h4>${formatPrice(product.price)}</h4>
+                <span>${formatPrice(item.price * item.count)}</span>
+                <button
+                  className="btn-remove"
+                  onClick={() => removeFromCart(item)}
+                >
+                  Quitar
+                </button>
               </div>
             </li>
           );
         })}
       </ul>
+      <div className="total">
+        <h5>Total: ${formatPrice(cartTotal())}</h5>
+        <Link to="/checkout">
+          <button className="btn-pay">Pagar</button>
+        </Link>
+      </div>
     </div>
   );
 };

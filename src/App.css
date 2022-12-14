@@ -57,7 +57,10 @@
   margin: 20rem auto;
 }
 
+
+
 /* Efectos hover fotos */
+
 #cf {
   position: relative;
   height: 400px;
@@ -88,7 +91,7 @@
 button {
   position: relative;
   border: none;
-  transition: .4s ease-in;
+  transition: 0.4s ease-in;
   z-index: 1;
 }
 
@@ -96,7 +99,6 @@ button::before button::after {
   position: absolute;
   content: "";
   z-index: -1;
-
 }
 
 button:hover {
@@ -106,7 +108,6 @@ button:hover {
 }
 
 .notfound {
-
   padding: 6rem 0;
   margin: 0 auto;
   display: flex;
@@ -157,8 +158,6 @@ button:hover {
   padding-top: 26px;
 }
 
-
-
 .buscador {
   position: absolute;
   top: 0;
@@ -203,6 +202,106 @@ button:hover {
   color: white;
 }
 
+
+/* carrito de compras  */
+.cart {
+  padding: 250px 1.15rem 0 1.15rem;
+  min-height: calc(100vh - 200px);
+  text-align: center;
+}
+
+.cart p {
+  margin-top: 0.75rem;
+  font-size: 1.025rem;
+  font-style: italic;
+}
+
+.cart .oferta {
+  color: rgb(177, 39, 14);
+  font-style: normal;
+}
+
+.noProducts{
+  margin-top: 3rem;
+}
+
+.cart h5 {
+  padding-top: 2rem;
+}
+
+.cart-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-view li {
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+
+.cart-view li img {
+  width: 100px;
+  height: 100px;
+  margin-right: 2rem;
+}
+
+.cart-view  .product,
+.cart-view  .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.25rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+.cart-view  .price span {
+  margin-right: 10px;
+  color: #988088;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.cart-view .total {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.cart-view .btn-pay {
+  padding: 8px 30px;
+  background-color: rgb(209, 12, 12);
+  color: rgb(243, 230, 230);
+}
+
+/* checkout page  */
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 56px);
+}
+
+.checkout img {
+  width: 300px;
+}
+
+.checkout p {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+.checkout .btn-back {
+  padding: 8px 30px;
+}
+=======
 /* Estilo links Navbar */
 
 a {
@@ -304,3 +403,4 @@ a:hover::before {
   color:#aaa;
   margin-bottom:0;
 }
+
