@@ -38,7 +38,7 @@ const Busqueda = () => {
   };
 
   return (
-    <>
+    <div className="main">
       <div className="buscar">
         <div className="search-box">
           <input
@@ -79,8 +79,9 @@ const Busqueda = () => {
           );
         })}
       </div>
-    </>
+      </div>
   );
 };
+
 
 export default Busqueda;
