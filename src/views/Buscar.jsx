@@ -20,6 +20,7 @@ const Busqueda = () => {
     } else {
       filterData();
     }
+
   }, [value]);
 
   const filterData = () => {

@@ -1,19 +1,37 @@
 .home-img {
-  background-image: url("/images/otras/img de fondo.jpeg");
+  background-image: url("https://images.unsplash.com/photo-1479646398076-8f15c2e587a7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right 0 top 74%;
-  height: 46rem;
+  background-position: right 0 top 26%;
+  height: 33rem;
   margin-top: 215px;
 }
 
 .home-img .text-box {
   color: rgb(255, 255, 255);
   text-align: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.text-box h3{
+  margin-top: 20px;
+
+}
+
+.subtitle{
+  text-align: center;
+  margin-top: 30px;
+  color: #2c2c2c;
+    background-color: #e9e2e2;
+    letter-spacing: .05em;
+    text-shadow: 
+      4px 4px 0px #d5d5d5, 
+      2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .home-img h1 {
-  text-shadow: 1px 1px 2px #988088, 0 0 25px black, 0 0 5px black;
+  text-shadow: 1px 1px 2px #988088, 0 0 25px rgb(243, 243, 243), 0 0 5px black;
 }
 
 .galeria {
@@ -30,3 +48,4 @@
   background: none;
   border: none;
 }
+
