@@ -46,7 +46,6 @@ function OffcanvasExample() {
                   <Link to="/lamparas">Lamparas</Link>
                   <Link to="/quienessomos">Quienes somos</Link>
                   <Link to="/contactanos">Contactanos</Link>
-                  <Link to="/login">Admin</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
