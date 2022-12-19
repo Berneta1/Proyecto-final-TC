@@ -10,7 +10,7 @@ import Footer from "./components/Footer.jsx";
 //views
 import Carrito from "./views/Carrito.jsx";
 import Bordados from "./views/Bordados.jsx";
-import CasaPajaros from "./views/Casapajaros.jsx";
+//import CasaPajaros from "./views/Casapajaros.jsx";
 import Home from "./views/Home.jsx";
 import Lamparas from "./views/Lamparas.jsx";
 import NotFound from "./views/Notfound.jsx";
@@ -101,7 +101,7 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/carrito" element={<Carrito />}></Route>
             <Route path="/bordados" element={<Bordados />}></Route>
-            <Route path="/casapajaros" element={<CasaPajaros />}></Route>
+            {/* <Route path="/casapajaros" element={<CasaPajaros />}></Route> */}
             <Route path="/lamparas" element={<Lamparas />}></Route>
             <Route path="/quienessomos" element={<QuienesSomos />}></Route>
             <Route path="/contactanos" element={<Contactanos />}></Route>
