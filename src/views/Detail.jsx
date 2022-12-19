@@ -36,11 +36,13 @@ const Detail = () => {
                     <img className="detailimg" src={product.img2} alt={product.name}></img>
                 </div>
 
-                <div className="productinfo">
+                <tbody className="productinfo">
                     <div className="detail-title">
+                    
                         <h3> {product.name} </h3>
                         <h4> ${formatPrice(product.price)} </h4>
                     </div>
+                    
                     <tr>
                         <td><p>Tamaño:</p></td><td><p>{product.size}</p></td>
                     </tr>
@@ -53,11 +55,12 @@ const Detail = () => {
                     <tr>
                         <td><p>Descripcion: </p></td><td> { product.detail}</td>
                     </tr>
+                    
                     <div className="comprar">
                      <button  onClick={() => viewProduct(addToCart(product))}>Comprar</button>
                     </div>
                     
-                </div>
+                </tbody>
 
 
             </div>

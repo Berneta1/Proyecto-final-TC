@@ -19,7 +19,7 @@ function OffcanvasExample() {
           <Container fluid>
             <div>
               <Link to="/carrito">
-              <i class="fa-solid fa-bag-shopping"></i>
+              <i className="fa-solid fa-bag-shopping"></i>
               </Link>
               <Link to="/buscar">
                 <i className="fa-solid fa-magnifying-glass"></i>
